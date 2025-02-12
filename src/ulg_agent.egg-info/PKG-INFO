@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: ulg-agent
+Version: 0.1.0
+Summary: A ULG extractor for time series data.
+Author: Abhishek
+License-File: LICENSE
+Requires-Dist: pyulog
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
