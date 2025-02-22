@@ -1,1 +1,6 @@
 *.ipynb
+build
+*__pycache__
+*egg-info
+TODO
+.env

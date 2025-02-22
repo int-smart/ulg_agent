@@ -10,10 +10,12 @@ setuptools.setup(
         "pyulog",
         "matplotlib",
         "numpy",
+        "together",
+        "python-dotenv",
     ],
     entry_points={
         "console_scripts": [
-            "ulg-extract=extractor.cli:main",
+            "ulg-extract=cli:main",
         ],
     },
     author="Abhishek",

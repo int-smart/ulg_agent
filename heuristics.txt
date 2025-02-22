@@ -1,0 +1,3 @@
+Value of arm should always be zero.
+Value of prearm should always be zero.
+Value of acceleration should always be zero.
