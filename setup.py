@@ -12,6 +12,7 @@ setuptools.setup(
         "numpy",
         "together",
         "python-dotenv",
+        "pillow",
     ],
     entry_points={
         "console_scripts": [

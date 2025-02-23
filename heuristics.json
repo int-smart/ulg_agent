@@ -1,0 +1,21 @@
+{
+    "heuristics": "states[0] is quaternion qx\nstates[1] is quaternion qy\nstates[2] is quaternion qz\nstates[3] is quaternion qw\nstates[4] is velocity x in meters/second\nstates[5] is velocity y in meters/second\nstates[6] is velocity z in meters/second\nstates[7] is position x in meters\nstates[8] is position y in meters\nstates[9] is position z in meters\nstates[10] is imu delta angle bias x in radians\nstates[11] is imu delta angle bias y in radians\nstates[12] is imu delta angle bias z in radians\nstates[13] is imu delta velocity bias x in meters/second\nstates[14] is imu delta velocity bias y in meters/second\nstates[15] is imu delta velocity bias z in meters/second\nstates[16] is earth's magnetic field x (gauss)\nstates[17] is earth's magnetic field y (gauss)\nstates[18] is earth's magnetic field z (gauss)\nstates[19] is body's magnetic field x (gauss)\nstates[20] is body's magnetic field y (gauss)\nstates[21] is body's magnetic field z (gauss)\nstates[22] is wind velocity x in meters/second\nstates[23] is wind velocity y in meters/second\n\ncovariances[0] is covariance of quaternion qx\ncovariances[1] is covariance of quaternion qy\ncovariances[2] is covariance of quaternion qz\ncovariances[3] is covariance of quaternion qw\ncovariances[4] is covariance of velocity x in meters/second\ncovariances[5] is covariance of velocity y in meters/second\ncovariances[6] is covariance of velocity z in meters/second\ncovariances[7] is covariance of position x in meters\ncovariances[8] is covariance of position y in meters\ncovariances[9] is covariance of position z in meters\ncovariances[10] is covariance of imu delta angle bias x in radians\ncovariances[11] is covariance of imu delta angle bias y in radians\ncovariances[12] is covariance of imu delta angle bias z in radians\ncovariances[13] is covariance of imu delta velocity bias x in meters/second\ncovariances[14] is covariance of imu delta velocity bias y in meters/second\ncovariances[15] is covariance of imu delta velocity bias z in meters/second\ncovariances[16] is covariance of earth's magnetic field x (gauss)\ncovariances[17] is covariance of earth's magnetic field y (gauss)\ncovariances[18] is covariance of earth's magnetic field z (gauss)\ncovariances[19] is covariance of body's magnetic field x (gauss)\ncovariances[20] is covariance of body's magnetic field y (gauss)\ncovariances[21] is covariance of body's magnetic field z (gauss)\ncovariances[22] is covariance of wind velocity x in meters/second\ncovariances[23] is covariance of wind velocity y in meters/second",
+    "comparison_topics": {
+        "estimation_x": [
+            ["vehicle_local_position", "x"],
+            ["vehicle_local_position_setpoint", "x"]
+        ],
+        "estimation_y": [
+            ["vehicle_local_position", "y"],
+            ["vehicle_local_position_setpoint", "y"]
+        ],
+        "estimation_z": [
+            ["vehicle_local_position", "z"],
+            ["vehicle_local_position_setpoint", "z"]
+        ],
+        "failsafe": [
+            ["estimator_states", "states[0]"],
+            ["actuator_armed", "armed"]
+        ]
+    }
+}
